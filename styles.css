@@ -1,0 +1,111 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  padding: 130px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+img {
+  width: 229px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+  width: 520px;
+  height: 344px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.text {
+  text-align: left;
+  padding: 30px;
+}
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-size: 1.6em;
+  font-family: 'Fraunces', serif;
+
+}
+p {
+  color: hsl(228, 12%, 48%);
+  font-size: 13px;
+}
+span {
+  margin-left: 15px;
+  font-size: 13px;
+  color: hsl(158, 36%, 37%);
+}
+.price {
+  margin-left: 0px;
+  font-size: 1.7em;
+  font-family: 'Fraunces', serif;
+}
+
+button {
+  margin-top: 15px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  padding: 8px 50px;
+  border-radius: 7px;
+  margin-left: 10px;
+  color: hsl(0, 0%, 100%);
+}
+button img {
+  width: fit-content;
+  margin-right: 5px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(156, 43%, 21%);
+}
+a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 375px) {
+  body {
+    flex-direction: none;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+    width: 300px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  img {
+    display: none;
+  }
+  .wrapper {
+    background-image: url(images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    margin-left: 10px;
+    margin-right: -50px;
+    width: 250px;
+    height: 550px;
+  }
+  .text {
+    margin-top: 145px;
+  }
+  button {
+    margin-top: 25px;
+    padding: 10px 60px;
+    margin-left: -8px;
+    margin-left: 1px;
+    background-image: url(images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position-x: 40px;
+    background-position-y: 7px;
+  }
+  .attribution {
+    font-size: 15px;
+     margin-left: 5px;
+  }
+
+}
